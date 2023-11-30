@@ -1,15 +1,15 @@
-
 import { Component } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';  
-
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: 'app-homepage',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './experience.component.html',
+  styleUrl: './experience.component.scss'
 })
-export class AboutComponent {
-title = 'your app';
+export class ExperienceComponent {
+  title = 'your app';
   // Define properties and data for the about section
   name: string = 'Mr Ni';
   occupation: string = 'Web Developer';
@@ -19,6 +19,4 @@ onButtonClick() {
     // Add any logic you want to perform on button click here
 
 }
-
-
 }

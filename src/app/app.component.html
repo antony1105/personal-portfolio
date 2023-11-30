@@ -1,9 +1,11 @@
 <header>
-  <h1>Welcome to My Angular App!</h1>
+  <h1>Portfolio Template</h1>
   <nav>
     <ul>
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/about">About</a></li>
+      
+      <a routerLink="/experience">My Experience</a>
+      <p (click)="onButtonClick()">Home</p>
+      <p (click)="onButtonClick()">About me</p>
       <!-- Other navigation links -->
     </ul>
   </nav>
@@ -181,7 +183,9 @@
 
 <main class="main">
   <div class="content">
+    
     <div class="left-side">
+      
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 982 239"
@@ -231,8 +235,11 @@
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
+    
     <div class="right-side">
+      
       <div class="pill-group">
+        
         @for (item of [
           { title: 'Explore the Docs', link: 'https://angular.dev' },
           { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
